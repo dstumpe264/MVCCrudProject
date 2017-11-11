@@ -13,7 +13,7 @@ Your name
 <h1>${sessionScope.general}</h1>
 <h1>Welcome to my army General</h1>
 Are you ready to begin?
-<form:form action="buildArmy.do">
+<form:form action="buildArmy.do" method="get">
 <input type="submit" value="Yes"/>
 </form:form>
 </body>

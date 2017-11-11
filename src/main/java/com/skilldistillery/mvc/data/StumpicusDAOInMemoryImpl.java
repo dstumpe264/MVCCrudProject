@@ -1,6 +1,9 @@
 package com.skilldistillery.mvc.data;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
@@ -8,10 +11,27 @@ import org.springframework.stereotype.Repository;
 @Primary
 @Repository
 public class StumpicusDAOInMemoryImpl implements StumpicusDAO {
+	Map<Integer, Warrior> army;
+	private int id = 1;
+	
+	public StumpicusDAOInMemoryImpl() {
+		army = new HashMap<>();
+		loadStarterArmy();
+	}
+	
+	private void loadStarterArmy() {
+		army.put(id, new Warrior(id++, "Stumpzilla", 1, Weapons.SWORD, WarriorClass.BRUTE));
+		army.put(id, new Warrior(id++, "Stumperella", 1, Weapons.SWORD, WarriorClass.BRUTE));
+		army.put(id, new Warrior(id++, "Stumpinator", 1, Weapons.SWORD, WarriorClass.BRUTE));
+		army.put(id, new Warrior(id++, "Stumpalumpagus", 1, Weapons.SWORD, WarriorClass.BRUTE));
+		army.put(id, new Warrior(id++, "Stumpify", 1, Weapons.SWORD, WarriorClass.BRUTE));
+		army.put(id, new Warrior(id++, "Killer Stump", 1, Weapons.SWORD, WarriorClass.BRUTE));
+
+		
+	}
 
 	@Override
 	public Warrior getWarriorById() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -35,8 +55,7 @@ public class StumpicusDAOInMemoryImpl implements StumpicusDAO {
 
 	@Override
 	public List<Warrior> getAllWarriors() {
-		// TODO Auto-generated method stub
-		return null;
+		return new ArrayList<Warrior>(army.values());
 	}
 
 }
