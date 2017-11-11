@@ -27,6 +27,7 @@ Warriors Name: ${army.id} ${army.name} Rank: ${army.rank}  Weapon: ${army.weapon
 </form>
 <br>
 </c:forEach>
+<p><a href="add.do">Add a new Warrior</a></p>
 
 </body>
 </html>

@@ -20,12 +20,12 @@ public class StumpicusDAOInMemoryImpl implements StumpicusDAO {
 	}
 	
 	private void loadStarterArmy() {
-		army.put(id, new Warrior(id++, "Stumpzilla", 1, Weapons.SWORD, WarriorClass.BRUTE));
-		army.put(id, new Warrior(id++, "Stumperella", 1, Weapons.SWORD, WarriorClass.BRUTE));
-		army.put(id, new Warrior(id++, "Stumpinator", 1, Weapons.SWORD, WarriorClass.BRUTE));
-		army.put(id, new Warrior(id++, "Stumpalumpagus", 1, Weapons.SWORD, WarriorClass.BRUTE));
-		army.put(id, new Warrior(id++, "Stumpify", 1, Weapons.SWORD, WarriorClass.BRUTE));
-		army.put(id, new Warrior(id++, "Killer Stump", 1, Weapons.SWORD, WarriorClass.BRUTE));
+		army.put(id, new Warrior(id++, "Stumpzilla", Rank.PRIVATE, Weapons.SWORD, WarriorClass.BRUTE));
+		army.put(id, new Warrior(id++, "Stumperella", Rank.PRIVATE, Weapons.SWORD, WarriorClass.BRUTE));
+		army.put(id, new Warrior(id++, "Stumpinator", Rank.PRIVATE, Weapons.SWORD, WarriorClass.BRUTE));
+		army.put(id, new Warrior(id++, "Stumpalumpagus", Rank.PRIVATE, Weapons.SWORD, WarriorClass.BRUTE));
+		army.put(id, new Warrior(id++, "Stumpify", Rank.PRIVATE, Weapons.SWORD, WarriorClass.BRUTE));
+		army.put(id, new Warrior(id++, "Killer Stump", Rank.PRIVATE, Weapons.SWORD, WarriorClass.BRUTE));
 
 		
 	}

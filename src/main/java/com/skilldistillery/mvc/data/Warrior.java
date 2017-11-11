@@ -11,14 +11,14 @@ public class Warrior {
 	private String name;
 
 	@Min(value = 1, message = "Minimum rank must be 1.")
-	private int rank;
+	private Rank rank;
 	private Weapons weapon;
 	private WarriorClass wClass;
 
 	public Warrior() {
 	}
 
-	public Warrior(int id, String name, int rank, Weapons weapon, WarriorClass wClass) {
+	public Warrior(int id, String name, Rank rank, Weapons weapon, WarriorClass wClass) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -35,11 +35,11 @@ public class Warrior {
 		this.name = name;
 	}
 
-	public int getRank() {
+	public Rank getRank() {
 		return rank;
 	}
 
-	public void setRank(int rank) {
+	public void setRank(Rank rank) {
 		this.rank = rank;
 	}
 
