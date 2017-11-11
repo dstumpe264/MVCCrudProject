@@ -7,6 +7,6 @@
 <title>Stumpicus' Web App</title>
 </head>
 <body>
-
+<h1>Welcome to Lord Stumpicus' Army</h1>
 </body>
 </html>
