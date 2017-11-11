@@ -12,7 +12,7 @@
 <h1>Welcome to Lord Stumpicus' Army</h1>
 <h2>Enter your name general</h2>
 <form:form action="general.do" method="post" modelAttribute="general">
-<form:input path="${sessionScope.general}"/><form:errors path="${sessionScope.general}"/>
+<input type="text" name="userName"/>
 <input type="submit" value="Enter"/>
 </form:form>
 

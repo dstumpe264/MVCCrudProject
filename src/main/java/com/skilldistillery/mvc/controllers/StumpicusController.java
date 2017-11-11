@@ -28,13 +28,21 @@ public class StumpicusController {
 	}
 	
 	@RequestMapping("general.do")
-	public ModelAndView getGeneralsName(@RequestParam("name") String userName, 
-								@ModelAttribute("general") String generalsName) {
-		ModelAndView mv = new ModelAndView("intro");
-		generalsName = userName;
+	public ModelAndView getGeneralsName(@RequestParam("userName") String name,
+										@ModelAttribute("general") String generalsName) {
+		ModelAndView mv = new ModelAndView("index");
+		mv.setViewName("intro");
+		generalsName = name;
+		mv.addObject(generalsName);
 		// Here I want to be able to take the user by his session
 		//and use his name through out the website.
 		//Also i would like to be able to set his army specifically to that user.
+		return mv;
+	}
+	
+	@RequestMapping(path="buildArmy.do")
+	public ModelAndView buildArmy(ModelAndView mv) {
+		
 		return mv;
 	}
 
