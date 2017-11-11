@@ -13,7 +13,7 @@ public class StumpicusController {
 	@Autowired
 	StumpicusDAO dao;
 	
-	@RequestMapping(path="home.do")
+	@RequestMapping("home.do")
 	public String home() {
 		return "index";
 	}
