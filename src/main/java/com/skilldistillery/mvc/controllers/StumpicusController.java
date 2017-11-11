@@ -2,8 +2,11 @@ package com.skilldistillery.mvc.controllers;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -50,6 +53,20 @@ public class StumpicusController {
 		mv.setViewName("buildArmy");
 		List<Warrior> army = dao.getAllWarriors();
 		mv.addObject("army", army);
+		return mv;
+	}
+	
+	@RequestMapping(path="add.do", method=RequestMethod.GET)
+	public String addWarrior(Model m) {
+		Warrior w = new Warrior();
+		m.addAttribute("warrior", w);
+		return "add";
+	}
+	
+	public ModelAndView doAdd(@Valid Warrior warrior) {
+		ModelAndView mv = new ModelAndView();
+		dao.addWarrior(warrior);
+		mv.setViewName("added");
 		return mv;
 	}
 

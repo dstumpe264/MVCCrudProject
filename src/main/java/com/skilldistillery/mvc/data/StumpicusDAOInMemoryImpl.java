@@ -31,24 +31,25 @@ public class StumpicusDAOInMemoryImpl implements StumpicusDAO {
 	}
 
 	@Override
-	public Warrior getWarriorById() {
-		return null;
+	public Warrior getWarriorById(int id) {
+		Warrior w = null;
+		return w;
 	}
 
 	@Override
-	public Warrior addWarrior() {
+	public Warrior addWarrior(Warrior w) {
+		w.setId(id++);
+		return army.put(w.getId(), w);
+	}
+
+	@Override
+	public Warrior deleteWarrior(Warrior w) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Warrior deleteWarrior() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Warrior updateWarrior() {
+	public Warrior updateWarrior(Warrior w) {
 		// TODO Auto-generated method stub
 		return null;
 	}
