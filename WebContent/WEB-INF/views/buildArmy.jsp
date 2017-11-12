@@ -17,7 +17,7 @@
 <h6>I have provided you with some of my very best warriors.</h6><br><hr>
 <div class="container">
 <div class="row">
-<div class="col troops">
+<div class="col troops scrollbar" id="style-13">
 <c:forEach var="army" items="${army }">
 Warriors Name: ${army.name} <br> Rank: ${army.rank} <br> Weapon: ${army.weapon} <br> Class: ${army.wClass }
 <div class="button">
