@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.intro {
+	text-align: center;
+	color: white;
+}
+
+body {
+	background-image: url("../images/StumpicusBackground.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: auto;
+	background-color: black;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+h2 {c
+	color: red;
+}

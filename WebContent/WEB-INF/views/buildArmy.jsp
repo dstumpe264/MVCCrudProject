@@ -6,15 +6,21 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/interface.css">
 <title>Army Interface</title>
 </head>
 <body>
-<h1>This is your army interface.</h1>
-Here you will see the overview of all the warriors in your army with links to edit different units.
+<h1>Welcome to your army interface</h1>
+<h3>Manage your troops.</h3>
 <br>
-These are your starting units. Feel free to add or delete.<br><hr>
+<h6>I have provided you with some of my very best warriors.</h6><br><hr>
+<div class="container">
+<div class="row">
+<div class="col troops">
 <c:forEach var="army" items="${army }">
-Warriors Name: ${army.id} ${army.name} Rank: ${army.rank}  Weapon: ${army.weapon} Class: ${army.wClass }
+Warriors Name: ${army.name} <br> Rank: ${army.rank} <br> Weapon: ${army.weapon} <br> Class: ${army.wClass }
+<div class="button">
 <form method="post" action="delete.do">
 <input type="submit" value="Delete">
 <input type="hidden" name="id" value="${army.id}">
@@ -25,8 +31,15 @@ Warriors Name: ${army.id} ${army.name} Rank: ${army.rank}  Weapon: ${army.weapon
 <input type="hidden" name="id" value="${army.id}">
 <br>
 </form>
+</div>
 <br>
 </c:forEach>
+</div>
+<div class="col">
+<img alt="Stumpicus" src="images/stumpzilla.png">
+</div>
+</div>
+</div>
 <p><a href="add.do">Add a new Warrior</a></p>
 
 </body>
