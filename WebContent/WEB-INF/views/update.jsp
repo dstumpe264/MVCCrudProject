@@ -17,7 +17,7 @@
 <div class="col-4">
 <img alt="stumperella" src="images/stumperella.png">
 </div>
-<div class="col-8">
+<div class="col">
 <form:form action="update.do" method="post" modelAttribute="warrior">
 	Name: <form:input path="name" value="${warrior.name}"/> <form:errors path="name"/><br> 
 	Rank: <form:radiobuttons path="rank" value="${warrior.rank}"/> <form:errors path="rank"/><br>
