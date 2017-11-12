@@ -5,11 +5,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/warrior.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Warrior Interface</title>
 </head>
 <body>
-<h1>Welcome to the Warrior Interface</h1>
+<h1>Warrior Interface</h1>
+<div class="container-fluid">
+<div class="row">
+<div class="col">
 <form:form action="addWarrior.do" method="post" modelAttribute="warrior">
 	Name: <form:input path="name"/> <form:errors path="name"/><br> 
 	Rank: <form:radiobuttons path="rank"/> <form:errors path="rank"/><br>
@@ -18,5 +23,11 @@
 	
 	<input type="submit" value="Add Warrior"/>
 </form:form>
+</div>
+<div class="col-6">
+<img alt="Stumpinidas" src="images/stumpinidas.jpg">
+</div>
+</div>
+</div>
 </body>
 </html>

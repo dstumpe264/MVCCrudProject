@@ -11,13 +11,14 @@
 <title>Army Interface</title>
 </head>
 <body>
-<h1>Welcome to your army interface</h1>
+<h1>Army Interface</h1>
 <h3>Manage your troops.</h3>
 <br>
-<h6>I have provided you with some of my very best warriors.</h6><br><hr>
+
 <div class="container">
 <div class="row">
 <div class="col troops scrollbar" id="style-13">
+<h6>I have provided you with some of my very best warriors.</h6><hr>
 <c:forEach var="army" items="${army }">
 Warriors Name: ${army.name} <br> Rank: ${army.rank} <br> Weapon: ${army.weapon} <br> Class: ${army.wClass }
 <div class="button">
@@ -34,13 +35,15 @@ Warriors Name: ${army.name} <br> Rank: ${army.rank} <br> Weapon: ${army.weapon} 
 </div>
 <br>
 </c:forEach>
+<div class="row">
+<a href="add.do">Add a new Warrior</a>
+</div>
 </div>
 <div class="col">
 <img alt="Stumpicus" src="images/stumpzilla.png">
 </div>
 </div>
 </div>
-<p><a href="add.do">Add a new Warrior</a></p>
 
 </body>
 </html>
