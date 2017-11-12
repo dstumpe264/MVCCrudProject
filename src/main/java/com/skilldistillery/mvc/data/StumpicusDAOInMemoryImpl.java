@@ -20,12 +20,13 @@ public class StumpicusDAOInMemoryImpl implements StumpicusDAO {
 	}
 	
 	private void loadStarterArmy() {
-		army.put(id, new Warrior(id++, "Stumpzilla", Rank.CAPTAIN, Weapons.SWORD, WarriorClass.BRUTE));
-		army.put(id, new Warrior(id++, "Stumperella", Rank.CAPTAIN, Weapons.SWORD, WarriorClass.BRUTE));
-		army.put(id, new Warrior(id++, "Stumpinator", Rank.SERGEANT, Weapons.SWORD, WarriorClass.BRUTE));
-		army.put(id, new Warrior(id++, "Stumpalumpagus", Rank.SERGEANT, Weapons.SWORD, WarriorClass.BRUTE));
-		army.put(id, new Warrior(id++, "Stumpify", Rank.SERGEANT, Weapons.SWORD, WarriorClass.BRUTE));
-		army.put(id, new Warrior(id++, "Killer Stump", Rank.PRIVATE, Weapons.SWORD, WarriorClass.BRUTE));
+		army.put(id, new Warrior(id++, "Stumpzilla", Rank.CAPTAIN, Weapons.GOLDENGUN, WarriorClass.DEVILDOG));
+		army.put(id, new Warrior(id++, "Stumperella", Rank.CAPTAIN, Weapons.KEYBLADE, WarriorClass.WETBOY));
+		army.put(id, new Warrior(id++, "Stumpinator", Rank.SERGEANT, Weapons.KEYBLADE, WarriorClass.BRUTE));
+		army.put(id, new Warrior(id++, "Stumpalumpagus", Rank.SERGEANT, Weapons.GUNCHUCKS, WarriorClass.DEVILDOG));
+		army.put(id, new Warrior(id++, "Stumpify", Rank.SERGEANT, Weapons.GOLDENGUN, WarriorClass.WARLOCK));
+		army.put(id, new Warrior(id++, "Stumpinidas", Rank.CAPTAIN, Weapons.GUNCHUCKS, WarriorClass.WETBOY));
+		army.put(id, new Warrior(id++, "Killer Stump", Rank.PRIVATE, Weapons.GUNCHUCKS, WarriorClass.WETBOY));
 
 		
 	}
