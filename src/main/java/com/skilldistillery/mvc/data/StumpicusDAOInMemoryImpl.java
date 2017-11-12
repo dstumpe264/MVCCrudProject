@@ -32,8 +32,7 @@ public class StumpicusDAOInMemoryImpl implements StumpicusDAO {
 
 	@Override
 	public Warrior getWarriorById(int id) {
-		Warrior w = null;
-		return w;
+		return army.get(id);
 	}
 
 	@Override
@@ -44,14 +43,12 @@ public class StumpicusDAOInMemoryImpl implements StumpicusDAO {
 
 	@Override
 	public Warrior deleteWarrior(Warrior w) {
-		// TODO Auto-generated method stub
-		return null;
+		return army.remove(w.getId());
 	}
 
 	@Override
 	public Warrior updateWarrior(Warrior w) {
-		// TODO Auto-generated method stub
-		return null;
+		return army.put(w.getId(), w);
 	}
 
 	@Override

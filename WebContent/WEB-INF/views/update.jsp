@@ -10,13 +10,13 @@
 </head>
 <body>
 <h1>Welcome to the Warrior Interface</h1>
-<form:form action="addWarrior.do" method="post" modelAttribute="warrior">
-	Name: <form:input path="name"/> <form:errors path="name"/><br> 
-	Rank: <form:radiobuttons path="rank"/> <form:errors path="rank"/><br>
+<form:form action="update.do" method="post" modelAttribute="warrior">
+	Name: <form:input path="name" value="${warrior.name}"/> <form:errors path="name"/><br> 
+	Rank: <form:radiobuttons path="rank" value="${warrior.rank}"/> <form:errors path="rank"/><br>
 	Weapon: <form:radiobuttons path="weapon"/> <form:errors path="weapon"/><br>
 	Class: <form:radiobuttons path="wClass"/> <form:errors path="wClass"/><br>
 	
-	<input type="submit" value="Add Warrior"/>
+	<input type="submit" value="Update Warrior"/>
 </form:form>
 </body>
 </html>

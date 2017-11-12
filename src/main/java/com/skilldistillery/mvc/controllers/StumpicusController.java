@@ -7,6 +7,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -63,11 +64,44 @@ public class StumpicusController {
 		return "add";
 	}
 	
-	public ModelAndView doAdd(@Valid Warrior warrior) {
+	@RequestMapping(path="addWarrior.do", method=RequestMethod.POST)
+	public ModelAndView doAdd(@Valid Warrior warrior, Errors e) {
 		ModelAndView mv = new ModelAndView();
+		if(e.hasErrors()) {
+			mv.setViewName("add");
+			return mv;
+		}
 		dao.addWarrior(warrior);
 		mv.setViewName("added");
 		return mv;
 	}
+	
+	public ModelAndView update(@RequestParam("id") Integer id) {
+		ModelAndView mv = new ModelAndView("update");
+		Warrior w = dao.getWarriorById(id);
+		mv.addObject("warrior", w);
+		return mv;
+	}
+	@RequestMapping(path="update.do", method=RequestMethod.POST)
+	public ModelAndView doUpdate(@Valid Warrior warrior, Errors e) {
+		ModelAndView mv = new ModelAndView();
+		if(e.hasErrors()) {
+			mv.setViewName("update");
+			return mv;
+		}
+		dao.addWarrior(warrior);
+		mv.setViewName("added");
+		return mv;
+	}
+	
+	@RequestMapping(path="delete.do")
+	public ModelAndView delete(@RequestParam("id") Integer id) {
+		ModelAndView mv = new ModelAndView("deleted");
+		Warrior w = dao.getWarriorById(id);
+		mv.addObject("name", w.getName());
+		dao.deleteWarrior(w);
+		return mv;
+	}
+	
 
 }

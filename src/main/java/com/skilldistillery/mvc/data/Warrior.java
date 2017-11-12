@@ -1,6 +1,7 @@
 package com.skilldistillery.mvc.data;
 
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 public class Warrior {
@@ -10,9 +11,11 @@ public class Warrior {
 	@Size(min = 2, max = 25, message = "Pick a number 2 and 25 characters.")
 	private String name;
 
-	@Min(value = 1, message = "Minimum rank must be 1.")
+	@NotNull(message="You must select a rank.")
 	private Rank rank;
+	@NotNull(message="You must select a weapon.")
 	private Weapons weapon;
+	@NotNull(message="You must select a class.")
 	private WarriorClass wClass;
 
 	public Warrior() {
