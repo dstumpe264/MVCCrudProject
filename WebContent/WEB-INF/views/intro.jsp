@@ -5,22 +5,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/intro.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Welcome General</title>
 </head>
 <body>
 <div class="container">
 <div class="row">
-<div class="col">
+<div class="col-6">
 <img alt="Stumpicus" src="images/Stumpicus.png">
 </div>
-<div class="col">
-<p>Humanity is corrupt. Everyone is a sinner. No one is pure. No one is innocent. I can save them all. Purge the wicked.<p>
+<div class="col-6">
+<p><strong>I am Lord Stumpicus</strong>, I will be the savior of humanity,<br> and you, 
+good General you have been chosen to lead your own army in this fight.
+<p>Humanity is corrupt. We are all sinners. No one is pure. No one is innocent. I can save us all. Purge the wicked.<p>
 <p>For me to save humanity I must conquer humanity. For humanity to be saved it must be purged of evil.
 I can do this. The world can be saved under my rule. General with your help we can do this.
 If I ruled over the world, if I acsend above all, this can be done. I will change the laws of the land.
-I will change what it means to be 
-Are you ready to begin?
+<br>
+<strong>Are you ready to begin?</strong>
 <form:form action="buildArmy.do" method="get">
 <input type="submit" value="Yes"/>
 </form:form>

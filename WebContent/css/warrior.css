@@ -11,8 +11,8 @@ body {
 }
 .col{
 	background: black;
-	height: 200px;
-	width: 150px;
+	height: 300px;
+	width: 100px;
 	border: white solid 5px;
 }
 .container{
@@ -28,9 +28,13 @@ h1, h2, h3, h6 {
 	text-align: center;
 	color: white;
 }
+.link{
+	color:cyan;
+}
 a{
 	text-decoration: underline;
 	color: cyan;
+	text-align: center;
 }
 p{
 	color: white;
@@ -60,9 +64,6 @@ header
 	margin-bottom: 25px;
 }
 
-a{
-	color: #074E8C;
-}
 img{
 	height: 600px;
 }

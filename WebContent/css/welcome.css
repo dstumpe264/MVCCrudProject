@@ -6,12 +6,17 @@
 }
 
 body {
-	background-image: url("../images/StumpicusBackground.jpg");
+	background: url("../images/StumpicusBackground.jpg");
+ 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: auto;
-	background-color: black;
+	background-size: 100% 100%;
+}
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+	background: none;
+  display: flex;
+  align-items: center;
 }
 
 h1 {

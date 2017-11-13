@@ -89,8 +89,8 @@ public class StumpicusController {
 			mv.setViewName("update");
 			return mv;
 		}
-		dao.addWarrior(warrior);
-		mv.setViewName("added");
+		dao.updateWarrior(warrior);
+		mv.setViewName("updated");
 		return mv;
 	}
 	

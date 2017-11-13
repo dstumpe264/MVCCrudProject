@@ -35,8 +35,8 @@ Warriors Name: ${army.name} <br> Rank: ${army.rank} <br> Weapon: ${army.weapon} 
 </div>
 <br>
 </c:forEach>
+<p><a class="link" href="add.do">Add a new Warrior</a></p>
 <div class="row">
-<a href="add.do">Add a new Warrior</a>
 </div>
 </div>
 <div class="col">

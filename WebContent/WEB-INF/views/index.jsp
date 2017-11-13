@@ -12,17 +12,19 @@
   
 </head>
 <body >
-<div class="container-fluid intro">
 <h1>Welcome to Lord Stumpicus' Army</h1>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<p><strong>I am Lord Stumpicus</strong>, I will be the savior of humanity,<br> and you, 
-good General you have been chosen to lead your own army in this fight.
+<div class="jumbotron vertical-center">
+<div class="container-fluid intro">
+
 
 <h2>Enter your name general</h2>
 <form:form action="general.do" method="post" modelAttribute="general">
 <input type="text" name="userName"/>
 <input type="submit" value="Enter"/>
 </form:form>
+</div>
+
+</div>
 </div>
 </body>
 </html>
