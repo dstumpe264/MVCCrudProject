@@ -4,6 +4,7 @@ Description of my CRUD project and technologies I used for this project...
 My project is designed to demonstrate what I've learned up to this point at Skill Distillery. In this project I demonstrate CRUD, Create, Retrieve, Update, Delete. More explanation to come.
 * Gradle
 * Spring
+* MVC
 * CSS
 * HTML
 * JSP
