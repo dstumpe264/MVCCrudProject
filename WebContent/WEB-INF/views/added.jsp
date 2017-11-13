@@ -8,9 +8,9 @@
 </head>
 <body>
 <h1>${warrior.name} has been added to your army.</h1>
-<h1>${warrior.name} rank is ${warrior.rank}</h1>
-<h1>${warrior.name} is equipped with a ${warrior.weapon}.</h1>
-<h1>${warrior.name} is a ${warrior.wClass}.</h1>
+<h3>${warrior.name} rank is ${warrior.rank}</h3>
+<h3>${warrior.name} is equipped with a ${warrior.weapon}.</h3>
+<h3>${warrior.name} is a ${warrior.wClass}.</h3>
 <p><a href="buildArmy.do">Return to your Army's Interface</a>
 </body>
 </html>

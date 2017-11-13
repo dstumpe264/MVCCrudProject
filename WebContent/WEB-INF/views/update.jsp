@@ -27,6 +27,7 @@
 	<input type="submit" value="Update Warrior"/>
 </form:form>
 </div>
+<div class="col-2"></div>
 </div>
 </div>
 </body>

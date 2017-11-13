@@ -12,7 +12,8 @@ body {
 .container{
 }
 .troops{
-	max-height: 200px;
+	max-height: 800px;
+	height: 600px;
 	text-align: center;
 	background: black;
 	overflow: scroll;
@@ -55,7 +56,7 @@ header
 }
 
 a{
-	color: #074E8C;
+	color: cyan;
 }
 img{
 	height: 600px;
@@ -65,7 +66,7 @@ img{
 {
 	margin-left: 30px;
 	float: left;
-	height: 300px;
+	height: 600px;
 	width: 65px;
 	background: black/* #F5F5F5 */;
 	overflow-y: scroll;
