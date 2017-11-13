@@ -17,12 +17,14 @@
 <img alt="Stumpicus" src="images/Stumpicus.png">
 </div>
 <div class="col-6">
-<p><strong>I am Lord Stumpicus</strong>, I will be the savior of humanity,<br> and you, 
-good General you have been chosen to lead your own army in this fight.
+<p><strong>I am Lord Stumpicus</strong>, I will be the savior of humanity,<br> and I have chosen you, 
+good General to lead your own army in this fight.
 <p>Humanity is corrupt. We are all sinners. No one is pure. No one is innocent. I can save us all. Purge the wicked.<p>
-<p>For me to save humanity I must conquer humanity. For humanity to be saved it must be purged of evil.
-I can do this. The world can be saved under my rule. General with your help we can do this.
-If I ruled over the world, if I acsend above all, this can be done. I will change the laws of the land.
+<p>For me to save humanity I must conquer humanity. For humanity to be saved it must be purged.
+To free humanity from their chains I must capture it.
+The world can be saved under my rule. General with your help we can do this.
+When I rule over the world, when I ascend to greatness. I will change the laws of the land.
+I will defy the very nature of of our existence. General, ascend with me. 
 <br>
 <strong>Are you ready to begin?</strong>
 <form:form action="buildArmy.do" method="get">
