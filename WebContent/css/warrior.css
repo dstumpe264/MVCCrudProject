@@ -82,6 +82,17 @@ img{
 	margin-bottom: 25px;
 	border: white 5px solid;
 }
+input{
+	background-color:black;
+	color:cyan;
+	margin-right: 0;
+}
+input[type=text]{
+	border: cyan solid 2px; 
+}
+input[type=radiobuttons] {
+  margin-right: 1;
+}
 
 .force-overflow
 {

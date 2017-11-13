@@ -9,6 +9,11 @@ body {
 	background-color: black;
 	color: white;
 }
+input{
+	background-color:black;
+	color:cyan;
+}
+
 .container{
 }
 .troops{

@@ -3,6 +3,10 @@
 Description of my CRUD project and technologies I used for this project...
 
 Screenshot of my working website...
+![altText](/images/screenshot1.png "title") 
+![altText](/images/screenshot2.png "title") 
+![altText](/images/screenshot3.png "title") 
+![altText](/images/screenshot4.png "title") 
 
 Instructions for using my website...
 
