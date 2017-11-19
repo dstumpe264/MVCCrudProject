@@ -64,6 +64,17 @@ public class StumpicusController {
 		return "add";
 	}
 	
+//	@RequestMapping(path="get.do", method=RequestMethod.POST)
+//	public ModelAndView displayWarrior(@RequestParam("id") Integer id) {
+//		ModelAndView mv = new ModelAndView();
+//		Warrior w = null;
+//		w = dao.getWarriorById(id);
+//		mv.addObject("warrior", w);
+//		mv.setViewName("displayWarrior");
+//	
+//		return mv;
+//	}
+	
 	@RequestMapping(path="addWarrior.do", method=RequestMethod.POST)
 	public ModelAndView doAdd(@Valid Warrior warrior, Errors e) {
 		ModelAndView mv = new ModelAndView();
