@@ -126,8 +126,38 @@ public class StumpicusDAODbImpl implements StumpicusDAO {
 
 	@Override
 	public Warrior updateWarrior(Warrior w) {
-		// TODO Auto-generated method stub
-		return null;
+		Warrior warrior = null;
+		String sql = "UPDATE warrior SET name = ?, rank_id = ?, weapon_id = ?, warrior_class_id = ? WHERE id = ?";
+		Connection conn = null;
+		try {
+			conn = DriverManager.getConnection(url, user, pass);
+			conn.setAutoCommit(false);
+			PreparedStatement st = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+			st.setString(1, w.getName());
+			st.setInt(2, w.getRank().getValue());
+			st.setInt(3, w.getWeapon().getValue());
+			st.setInt(4, w.getwClass().getValue());
+			st.setInt(5, w.getId());
+
+			// trying to get it to add to the list, so far no luck
+			int uc = st.executeUpdate();
+			if (uc == 1) {
+				ResultSet keys = st.getGeneratedKeys();
+				while (keys.next()) {
+					String name = keys.getString(2);
+					int id = keys.getInt(1);
+					w.setId(id);
+				}
+			}
+			conn.commit();
+			st.close();
+			conn.close();
+			warrior = w;			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return warrior;
 	}
 
 	@Override

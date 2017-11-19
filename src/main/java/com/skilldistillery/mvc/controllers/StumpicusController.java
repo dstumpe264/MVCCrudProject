@@ -87,20 +87,23 @@ public class StumpicusController {
 		return mv;
 	}
 	
+	@RequestMapping(path="update.do", params="id")
 	public ModelAndView update(@RequestParam("id") Integer id) {
-		ModelAndView mv = new ModelAndView("update");
+		ModelAndView mv = new ModelAndView();
 		Warrior w = dao.getWarriorById(id);
 		mv.addObject("warrior", w);
+		mv.setViewName("update");
 		return mv;
 	}
-	@RequestMapping(path="update.do", method=RequestMethod.POST)
+	@RequestMapping(path="updateWarrior.do", method=RequestMethod.POST)
 	public ModelAndView doUpdate(@Valid Warrior warrior, Errors e) {
 		ModelAndView mv = new ModelAndView();
 		if(e.hasErrors()) {
 			mv.setViewName("update");
 			return mv;
 		}
-		dao.updateWarrior(warrior);
+		Warrior w = dao.updateWarrior(warrior);
+		mv.addObject("warrior", w);
 		mv.setViewName("updated");
 		return mv;
 	}

@@ -18,13 +18,14 @@
 <img alt="stumperella" src="images/stumperella.png">
 </div>
 <div class="col">
-<form:form action="update.do" method="post" modelAttribute="warrior">
+<form:form action="updateWarrior.do" method="post" modelAttribute="warrior">
 	Name: <form:input path="name"/><br> <form:errors path="name"/><br> 
 	Rank: <form:radiobuttons path="rank"/><br> <form:errors path="rank"/><br>
 	Weapon: <form:radiobuttons path="weapon"/><br> <form:errors path="weapon"/><br>
 	Class: <form:radiobuttons path="wClass"/><br> <form:errors path="wClass"/><br>
 	
 	<input type="submit" value="Update Warrior"/>
+	<input type="hidden" name="id" value="${warrior.id }">
 </form:form>
 </div>
 <div class="col-2"></div>
