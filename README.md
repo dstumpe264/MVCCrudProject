@@ -1,7 +1,9 @@
 ## MVC Crud Project(11/2017)
 ### David Stumpe AKA Lord Stumpicus
 Description of my CRUD project and technologies I used for this project...
-My project is designed to demonstrate what I've learned up to this point at Skill Distillery. In this project I demonstrate CRUD, Create, Retrieve, Update, Delete. More explanation to come.
+My project is designed to demonstrate what I've learned up to this point at Skill Distillery. In this project I demonstrate CRUD, Create, Retrieve, Update, Delete. 
+Part 2 of this project demonstrates what I have learned about databases. Instead of individual warriors being created and instantiated through the program it's self and living in memory, they are now kept in a database. Using MySql query statements to pull them and store them. The WebApp now has CRUD functionality through a database. 
+Disclosure: The dialogue of my web app is intended to be humorous, and is sort of an inside joke, I have no delusions of grandeur. It does not reflect my beliefs.  More explanation to come.
 * Gradle
 * Spring
 * MVC
@@ -9,6 +11,9 @@ My project is designed to demonstrate what I've learned up to this point at Skil
 * HTML
 * JSP
 * Bootstrap
+* MYSql
+* JDBC
+* SQLJDBC
 * 
 
 Screenshot of my working website...
