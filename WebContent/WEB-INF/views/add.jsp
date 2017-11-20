@@ -13,20 +13,29 @@
 <body>
 <h1>Warrior Interface</h1>
 <div class="container-fluid">
+<p><a href="buildArmy.do">Return to Army Interface</a>
 <div class="row">
-<div class="col">
 <form:form action="addWarrior.do" method="post" modelAttribute="warrior">
+	<div class="row">
+	<div class="col">
 	Name: <form:input path="name"/><form:errors path="name"/> <br> 
-	Rank: <form:radiobuttons path="rank" element="br"/><br> <form:errors path="rank"/><br>
-	Weapon: <form:radiobuttons path="weapon"/><br> <form:errors path="weapon"/><br>
-	Class: <form:radiobuttons path="wClass"/><br> <form:errors path="wClass"/><br>
-	
 	<input type="submit" value="Add Warrior"/>
+	<input type="hidden" name="id" value="${warrior.id }">
+	</div>
+	<div class="col">
+	Rank: <form:radiobuttons path="rank" element="br"/><br> <form:errors path="rank"/>
+	</div>
+	<div class="col">
+	Weapon: <form:radiobuttons path="weapon" element="br"/><br> <form:errors path="weapon"/>
+	</div>
+	<div class="col">
+	Class: <form:radiobuttons path="wClass" element="br"/><br> <form:errors path="wClass"/>
+	</div>
+	<div class="col image">
+	<img alt="Stumpinidas" src="images/stumpinidas.png">
+	</div>
+	</div>
 </form:form>
-</div>
-<div class="col-6">
-<img alt="Stumpinidas" src="images/stumpinidas.png">
-</div>
 </div>
 </div>
 </body>

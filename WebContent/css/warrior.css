@@ -11,9 +11,12 @@ body {
 }
 .col{
 	background: black;
-	height: 300px;
-	width: 100px;
 	border: white solid 5px;
+	height: 100%;
+}
+.image{
+	background: none;
+	border: none;
 }
 .col-6{
 
@@ -45,7 +48,7 @@ a{
 }
 p{
 	color: white;
-	background-color: black;
+	background-color: none;
 	text-align: center;
 }
 

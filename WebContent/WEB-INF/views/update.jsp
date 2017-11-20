@@ -12,24 +12,33 @@
 </head>
 <body>
 <h1>Warrior Interface</h1>
+<p><a href="buildArmy.do">Return to Army Interface</a>
 <div class="container-fluid">
 <div class="row">
-<div class="col-4">
+<div class="col image">
 <img alt="stumperella" src="images/stumperella.png">
 </div>
-<div class="col">
 <form:form action="updateWarrior.do" method="post" modelAttribute="warrior">
-	Name: <form:input path="name"/><br> <form:errors path="name"/><br> 
-	Rank: <form:radiobuttons path="rank"/><br> <form:errors path="rank"/><br>
-	Weapon: <form:radiobuttons path="weapon"/><br> <form:errors path="weapon"/><br>
-	Class: <form:radiobuttons path="wClass"/><br> <form:errors path="wClass"/><br>
-	
+	<div class = "row">
+	<div class="col">
+	Name: <form:input path="name" element="br"/><br> <form:errors path="name"/><br> 
 	<input type="submit" value="Update Warrior"/>
 	<input type="hidden" name="id" value="${warrior.id }">
+	</div>
+	<div class="col">
+	Rank: <form:radiobuttons path="rank" element="br"/><br> <form:errors path="rank"/><br>
+	</div>
+	<div class="col">
+	Weapon: <form:radiobuttons path="weapon" element="br"/><br> <form:errors path="weapon"/><br>
+	</div>
+	<div class="col">
+	Class: <form:radiobuttons path="wClass" element="br"/><br> <form:errors path="wClass"/><br>
+	</div>
+	
+	</div>
 </form:form>
 </div>
 <div class="col-2"></div>
-</div>
 </div>
 </body>
 </html>
