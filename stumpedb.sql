@@ -113,7 +113,10 @@ COMMIT;
 START TRANSACTION;
 USE `stumpedb`;
 INSERT INTO `warrior_class` (`id`, `class_name`) VALUES (1, 'Brute');
-INSERT INTO `warrior_class` (`id`, `class_name`) VALUES (2, 'Warlock');
+INSERT INTO `warrior_class` (`id`, `class_name`) VALUES (2, 'Basher');
+INSERT INTO `warrior_class` (`id`, `class_name`) VALUES (3, 'Ranger');
+INSERT INTO `warrior_class` (`id`, `class_name`) VALUES (4, 'MagicMan');
+INSERT INTO `warrior_class` (`id`, `class_name`) VALUES (5, 'Shapeshifter');
 
 COMMIT;
 
@@ -124,7 +127,10 @@ COMMIT;
 START TRANSACTION;
 USE `stumpedb`;
 INSERT INTO `weapon` (`id`, `weapon_name`) VALUES (1, 'Keyblade');
-INSERT INTO `weapon` (`id`, `weapon_name`) VALUES (2, 'Sword');
+INSERT INTO `weapon` (`id`, `weapon_name`) VALUES (2, 'Gunchucks');
+INSERT INTO `weapon` (`id`, `weapon_name`) VALUES (3, 'Battleaxe');
+INSERT INTO `weapon` (`id`, `weapon_name`) VALUES (4, 'Galaxynote7');
+INSERT INTO `weapon` (`id`, `weapon_name`) VALUES (5, 'LaserKatana');
 
 COMMIT;
 

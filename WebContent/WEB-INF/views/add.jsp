@@ -17,7 +17,7 @@
 <div class="col">
 <form:form action="addWarrior.do" method="post" modelAttribute="warrior">
 	Name: <form:input path="name"/><form:errors path="name"/> <br> 
-	Rank: <form:radiobuttons path="rank"/><br> <form:errors path="rank"/><br>
+	Rank: <form:radiobuttons path="rank" element="br"/><br> <form:errors path="rank"/><br>
 	Weapon: <form:radiobuttons path="weapon"/><br> <form:errors path="weapon"/><br>
 	Class: <form:radiobuttons path="wClass"/><br> <form:errors path="wClass"/><br>
 	
