@@ -15,7 +15,7 @@
 <p><a href="buildArmy.do">Return to Army Interface</a>
 <div class="container-fluid">
 <div class="row">
-<div class="col image">
+<div class="col-6 image">
 <img alt="stumperella" src="images/stumperella.png">
 </div>
 <form:form action="updateWarrior.do" method="post" modelAttribute="warrior">
@@ -38,7 +38,6 @@
 	</div>
 </form:form>
 </div>
-<div class="col-2"></div>
 </div>
 </body>
 </html>
